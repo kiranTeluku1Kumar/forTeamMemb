@@ -16,7 +16,7 @@ public class HelloWorldController {
     	mv = new ModelAndView("helloworld");	
     	
     	String team = "Histogenetics!!";
-    	String name = "sungkook";
+    	String name = "sungkook seo";
     	
     	mv.addObject("name", name);
     	mv.addObject("team", team);
