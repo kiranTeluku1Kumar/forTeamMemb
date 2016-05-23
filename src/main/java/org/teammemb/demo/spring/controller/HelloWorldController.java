@@ -16,7 +16,7 @@ public class HelloWorldController {
     	//mv = new ModelAndView("hello");	
     	
         model.addAttribute("name", name);
-        return "helloworld";
+        return "index";
     }
 
 }
