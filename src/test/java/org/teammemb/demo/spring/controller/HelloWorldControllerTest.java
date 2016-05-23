@@ -23,7 +23,8 @@ import org.springframework.web.context.WebApplicationContext;
 public class HelloWorldControllerTest {
 
     @Autowired private WebApplicationContext ctx;
-
+    @Autowired private WebApplicationContext testCtx;
+    
     private MockMvc mockMvc;
 
     @Before public void setUp() {
