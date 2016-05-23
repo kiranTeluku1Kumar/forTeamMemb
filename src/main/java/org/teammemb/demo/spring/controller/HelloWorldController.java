@@ -10,13 +10,12 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloWorldController { 
 
     @RequestMapping("/hello")
-    public ModelAndView hello(Model model) {
+    public ModelAndView hello(@RequestParam(value="name", required=false, defaultValue="sungkook seo") String name, Model model) {
     	
     	ModelAndView mv;    	
     	mv = new ModelAndView("helloworld");	
     	
     	String team = "Histogenetics!!";
-    	String name = "sungkook seo";
     	
     	mv.addObject("name", name);
     	mv.addObject("team", team);
